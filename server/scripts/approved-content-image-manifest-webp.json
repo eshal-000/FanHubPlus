@@ -1,0 +1,305 @@
+{
+  "note": "Destination manifest for user-supplied approved WebP images. Do not link these paths to MongoDB until the files exist and image rights/identity are reviewed.",
+  "destinationRoot": "client/public/images/approved",
+  "records": [
+    {
+      "slug": "pokemon",
+      "primary": "/images/approved/pokemon/cover.webp",
+      "gallery": [
+        "/images/approved/pokemon/gallery-01.webp"
+      ],
+      "people": [],
+      "officialMedia": "Verify an official series-era clip before adding a URL."
+    },
+    {
+      "slug": "doraemon",
+      "primary": "/images/approved/doraemon/cover.webp",
+      "gallery": [
+        "/images/approved/doraemon/gallery-01.webp"
+      ],
+      "people": [],
+      "officialMedia": "Verify an official clip before adding a URL."
+    },
+    {
+      "slug": "minecraft",
+      "primary": "/images/approved/minecraft/cover.webp",
+      "gallery": [
+        "/images/approved/minecraft/gallery-01.webp"
+      ],
+      "people": [],
+      "officialMedia": "Verify an official gameplay video before adding a URL."
+    },
+    {
+      "slug": "stardew-valley",
+      "primary": "/images/approved/stardew-valley/cover.webp",
+      "gallery": [
+        "/images/approved/stardew-valley/gallery-01.webp"
+      ],
+      "people": [],
+      "officialMedia": "Verify an official game video before adding a URL."
+    },
+    {
+      "slug": "winnie-the-pooh-2011",
+      "primary": "/images/approved/winnie-the-pooh-2011/poster.webp",
+      "gallery": [
+        "/images/approved/winnie-the-pooh-2011/gallery-01.webp"
+      ],
+      "people": [
+        {
+          "name": "Stephen J. Anderson",
+          "path": "/images/approved/winnie-the-pooh-2011/stephen-j-anderson.webp"
+        },
+        {
+          "name": "Don Hall",
+          "path": "/images/approved/winnie-the-pooh-2011/don-hall.webp"
+        },
+        {
+          "name": "Jim Cummings",
+          "path": "/images/approved/winnie-the-pooh-2011/jim-cummings.webp"
+        },
+        {
+          "name": "Bud Luckey",
+          "path": "/images/approved/winnie-the-pooh-2011/bud-luckey.webp"
+        },
+        {
+          "name": "Craig Ferguson",
+          "path": "/images/approved/winnie-the-pooh-2011/craig-ferguson.webp"
+        },
+        {
+          "name": "Travis Oates",
+          "path": "/images/approved/winnie-the-pooh-2011/travis-oates.webp"
+        }
+      ],
+      "officialMedia": "Verify an official Disney trailer."
+    },
+    {
+      "slug": "little-forest-2018",
+      "primary": "/images/approved/little-forest-2018/poster.webp",
+      "gallery": [
+        "/images/approved/little-forest-2018/gallery-01.webp"
+      ],
+      "people": [
+        {
+          "name": "Yim Soon-rye",
+          "path": "/images/approved/little-forest-2018/yim-soon-rye.webp"
+        },
+        {
+          "name": "Kim Tae-ri",
+          "path": "/images/approved/little-forest-2018/kim-tae-ri.webp"
+        },
+        {
+          "name": "Ryu Jun-yeol",
+          "path": "/images/approved/little-forest-2018/ryu-jun-yeol.webp"
+        },
+        {
+          "name": "Jin Ki-joo",
+          "path": "/images/approved/little-forest-2018/jin-ki-joo.webp"
+        },
+        {
+          "name": "Moon So-ri",
+          "path": "/images/approved/little-forest-2018/moon-so-ri.webp"
+        }
+      ],
+      "officialMedia": "Verify an official film trailer."
+    },
+    {
+      "slug": "taare-zameen-par-2007",
+      "primary": "/images/approved/taare-zameen-par-2007/poster.webp",
+      "gallery": [
+        "/images/approved/taare-zameen-par-2007/gallery-01.webp"
+      ],
+      "people": [
+        {
+          "name": "Aamir Khan",
+          "path": "/images/approved/taare-zameen-par-2007/aamir-khan.webp"
+        },
+        {
+          "name": "Darsheel Safary",
+          "path": "/images/approved/taare-zameen-par-2007/darsheel-safary.webp"
+        },
+        {
+          "name": "Tisca Chopra",
+          "path": "/images/approved/taare-zameen-par-2007/tisca-chopra.webp"
+        },
+        {
+          "name": "Vipin Sharma",
+          "path": "/images/approved/taare-zameen-par-2007/vipin-sharma.webp"
+        }
+      ],
+      "officialMedia": "Verify an official film trailer."
+    },
+    {
+      "slug": "zanjeerain",
+      "primary": "/images/approved/zanjeerain/poster.webp",
+      "gallery": [
+        "/images/approved/zanjeerain/gallery-01.webp"
+      ],
+      "people": [
+        {
+          "name": "Sajal Aly",
+          "path": "/images/approved/zanjeerain/sajal-aly.webp"
+        },
+        {
+          "name": "Ameer Gilani",
+          "path": "/images/approved/zanjeerain/ameer-gilani.webp"
+        },
+        {
+          "name": "Danyal Zafar",
+          "path": "/images/approved/zanjeerain/danyal-zafar.webp"
+        }
+      ],
+      "officialMedia": "Verify a HUM TV promotional video."
+    },
+    {
+      "slug": "pororo",
+      "primary": "/images/approved/pororo/poster.webp",
+      "gallery": [
+        "/images/approved/pororo/gallery-01.webp"
+      ],
+      "people": [],
+      "officialMedia": "Verify a Pororo official video."
+    },
+    {
+      "slug": "taarak-mehta-ka-ooltah-chashmah",
+      "primary": "/images/approved/taarak-mehta-ka-ooltah-chashmah/poster.webp",
+      "gallery": [
+        "/images/approved/taarak-mehta-ka-ooltah-chashmah/gallery-01.webp"
+      ],
+      "people": [],
+      "officialMedia": "Verify an official Sony LIV promo."
+    },
+    {
+      "slug": "bts",
+      "primary": "/images/approved/bts/group.webp",
+      "gallery": [
+        "/images/approved/bts/gallery-01.webp"
+      ],
+      "people": [
+        {
+          "name": "RM",
+          "path": "/images/approved/bts/rm.webp"
+        },
+        {
+          "name": "Jin",
+          "path": "/images/approved/bts/jin.webp"
+        },
+        {
+          "name": "SUGA",
+          "path": "/images/approved/bts/suga.webp"
+        },
+        {
+          "name": "j-hope",
+          "path": "/images/approved/bts/j-hope.webp"
+        },
+        {
+          "name": "Jimin",
+          "path": "/images/approved/bts/jimin.webp"
+        },
+        {
+          "name": "V",
+          "path": "/images/approved/bts/v.webp"
+        },
+        {
+          "name": "Jung Kook",
+          "path": "/images/approved/bts/jung-kook.webp"
+        }
+      ],
+      "officialMedia": "Verify a BIGHIT MUSIC official music video."
+    },
+    {
+      "slug": "blackpink",
+      "primary": "/images/approved/blackpink/group.webp",
+      "gallery": [
+        "/images/approved/blackpink/gallery-01.webp"
+      ],
+      "people": [
+        {
+          "name": "JISOO",
+          "path": "/images/approved/blackpink/jisoo.webp"
+        },
+        {
+          "name": "JENNIE",
+          "path": "/images/approved/blackpink/jennie.webp"
+        },
+        {
+          "name": "ROSÉ",
+          "path": "/images/approved/blackpink/rose.webp"
+        },
+        {
+          "name": "LISA",
+          "path": "/images/approved/blackpink/lisa.webp"
+        }
+      ],
+      "officialMedia": "Verify a YG Entertainment official music video."
+    },
+    {
+      "slug": "the-adventures-of-tintin",
+      "primary": "/images/approved/the-adventures-of-tintin/cover.webp",
+      "gallery": [
+        "/images/approved/the-adventures-of-tintin/gallery-01.webp"
+      ],
+      "people": [
+        {
+          "name": "Hergé",
+          "path": "/images/approved/the-adventures-of-tintin/herge.webp"
+        }
+      ],
+      "officialMedia": "Not required for a comic entry."
+    },
+    {
+      "slug": "asterix",
+      "primary": "/images/approved/asterix/cover.webp",
+      "gallery": [
+        "/images/approved/asterix/gallery-01.webp"
+      ],
+      "people": [],
+      "officialMedia": "Not required for a comic entry."
+    },
+    {
+      "slug": "yotsuba-and",
+      "primary": "/images/approved/yotsuba-and/cover.webp",
+      "gallery": [
+        "/images/approved/yotsuba-and/gallery-01.webp"
+      ],
+      "people": [
+        {
+          "name": "Kiyohiko Azuma",
+          "path": "/images/approved/yotsuba-and/kiyohiko-azuma.webp"
+        }
+      ],
+      "officialMedia": "Not required for a manga entry."
+    },
+    {
+      "slug": "chis-sweet-home",
+      "primary": "/images/approved/chis-sweet-home/cover.webp",
+      "gallery": [
+        "/images/approved/chis-sweet-home/gallery-01.webp"
+      ],
+      "people": [
+        {
+          "name": "Konami Kanata",
+          "path": "/images/approved/chis-sweet-home/konami-kanata.webp"
+        }
+      ],
+      "officialMedia": "Not required for a manga entry."
+    },
+    {
+      "slug": "modest-minecraft-inspired",
+      "primary": "/images/approved/modest-minecraft-inspired/inspiration.webp",
+      "gallery": [
+        "/images/approved/modest-minecraft-inspired/gallery-01.webp"
+      ],
+      "people": [],
+      "officialMedia": "Not required for an original cosplay concept."
+    },
+    {
+      "slug": "modest-pokemon-inspired",
+      "primary": "/images/approved/modest-pokemon-inspired/inspiration.webp",
+      "gallery": [
+        "/images/approved/modest-pokemon-inspired/gallery-01.webp"
+      ],
+      "people": [],
+      "officialMedia": "Not required for an original cosplay concept."
+    }
+  ]
+}

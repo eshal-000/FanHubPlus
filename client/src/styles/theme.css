@@ -1,0 +1,266 @@
+:root {
+  --bg: #230018;
+  --bg-alt: #1B0014;
+  --nav: #180012;
+  --raspberry: #99004D;
+  --primary: #FF006B;
+  --cream: #FFF3DE;
+  --yellow: #FFE347;
+  --card: #390B2B;
+  --surface: #390B2B;
+  --surface-light: #501039;
+  --muted: #D6B9CA;
+  --border: rgba(255, 243, 222, 0.13);
+  --pink-glow: rgba(255, 0, 107, 0.4);
+  --glow: rgba(255, 0, 107, 0.4);
+  --footer-bg: #180012;
+  --footer-wave-fill: #180012;
+  --footer-wave-stroke: #FF006B;
+  color-scheme: dark;
+}
+
+[data-theme='light'] {
+  --bg: #FFF9F3;
+  --bg-alt: #FFF0E7;
+  --nav: #FFFDF8;
+  --cream: #230018;
+  --card: #FFFFFF;
+  --surface: #FFFDF8;
+  --surface-light: #FFEAF4;
+  --muted: #735368;
+  --yellow: #8A6100;
+  --border: rgba(153, 0, 77, 0.18);
+  --pink-glow: rgba(255, 0, 107, 0.22);
+  --glow: rgba(255, 0, 107, 0.22);
+  --footer-bg: #FFF7FC;
+  --footer-wave-fill: #FFF7FC;
+  --footer-wave-stroke: #FF4B92;
+  color-scheme: light;
+}
+
+[data-theme='light'] body {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(255, 0, 107, 0.08), transparent 30%),
+    radial-gradient(circle at 88% 8%, rgba(139, 92, 246, 0.08), transparent 28%),
+    var(--bg);
+  color: var(--cream);
+}
+
+[data-theme='light'] .surface-panel,
+[data-theme='light'] .fandom-card {
+  box-shadow: 0 14px 38px rgba(153, 0, 77, 0.08);
+}
+
+[data-theme='light'] input,
+[data-theme='light'] select,
+[data-theme='light'] textarea {
+  background: color-mix(in srgb, var(--card) 94%, var(--primary) 6%);
+}
+
+[data-theme='light'] .bg-\[\#13000e\]\/95,
+[data-theme='light'] .bg-\[\#070007\]\/90,
+[data-theme='light'] .bg-\[\#12000d\] {
+  background-color: rgba(255, 253, 248, 0.96) !important;
+}
+
+[data-theme='light'] .from-\[\#12000d\] {
+  --tw-gradient-from: rgba(255, 253, 248, 0.98) var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgba(255, 253, 248, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+[data-theme='light'] .via-\[\#12000d\]\/50 {
+  --tw-gradient-to: rgba(255, 253, 248, 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), rgba(255, 253, 248, 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to) !important;
+}
+
+.site-footer {
+  background: var(--footer-bg);
+}
+
+[data-theme='light'] .site-footer {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(255, 0, 107, 0.12), transparent 32%),
+    radial-gradient(circle at 88% 22%, rgba(153, 0, 77, 0.1), transparent 30%),
+    linear-gradient(180deg, #FFF7FC 0%, #FFF3FA 48%, #FFF9F3 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 0, 107, 0.12);
+}
+
+[data-theme='light'] header.bg-nav {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(255, 248, 253, 0.94));
+  box-shadow: 0 16px 40px rgba(153, 0, 77, 0.08);
+}
+
+[data-theme='light'] .btn-secondary {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(255, 0, 107, 0.35);
+  color: var(--cream);
+}
+
+[data-theme='light'] .btn-special {
+  background: linear-gradient(100deg, #FFF2B7, #FFFFFF, #FFE4F0);
+  box-shadow: 0 12px 28px rgba(153, 0, 77, 0.12);
+}
+
+h1,
+h2,
+h3,
+h4,
+.ui-label {
+  font-family: Orbitron, sans-serif;
+}
+
+.special {
+  font-family: 'Protest Riot', cursive;
+  font-weight: 400;
+}
+
+.gradient-primary {
+  background: linear-gradient(100deg, #FF006B, #99004D, #FFE347);
+}
+
+.gradient-signature {
+  background: linear-gradient(100deg, #FFE347, #FFF3DE, #FF006B);
+}
+
+.gradient-soft {
+  background: linear-gradient(100deg, #FFF3DE, #FF91B9, #FF006B);
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fandom-card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.fandom-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 28px var(--pink-glow);
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-special {
+  border-radius: 12px;
+  padding: 0.875rem 1.5rem;
+  font-family: 'Protest Riot', cursive;
+  font-weight: 400;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #FFF3DE;
+  box-shadow: 0 7px 28px rgba(255, 0, 107, 0.32);
+}
+
+.btn-primary:hover {
+  background: #FF2C85;
+  transform: translateY(-2px);
+  box-shadow: 0 0 22px var(--pink-glow);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
+}
+
+.btn-special {
+  background: linear-gradient(100deg, #FFE347, #FFF3DE);
+  color: #230018;
+}
+
+.surface-panel {
+  background: color-mix(in srgb, var(--card) 88%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.star {
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(255, 243, 222, 0.75);
+  box-shadow: 0 0 10px rgba(255, 243, 222, 0.4);
+  animation: star-twinkle 5s ease-in-out infinite;
+}
+
+.star-pink {
+  background: rgba(255, 0, 107, 0.8);
+  box-shadow: 0 0 12px rgba(255, 0, 107, 0.55);
+}
+
+.star-yellow {
+  background: rgba(255, 227, 71, 0.85);
+  box-shadow: 0 0 12px rgba(255, 227, 71, 0.5);
+}
+
+.star-cream {
+  background: rgba(255, 243, 222, 0.9);
+}
+
+@keyframes star-twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.75);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+input,
+select,
+textarea {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--cream);
+  padding: 0.875rem 1rem;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+  filter: hue-rotate(290deg) saturate(2);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+}
+
+:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
