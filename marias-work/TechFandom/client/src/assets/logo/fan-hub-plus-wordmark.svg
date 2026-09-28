@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80" fill="none">
+  <!-- "F" in cream -->
+  <text x="20" y="52" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="52" letter-spacing="-2" fill="#FFF3DE">F</text>
+
+  <!-- Central geometric mark (pink hexagon with yellow diamond) -->
+  <g transform="translate(80, 10)">
+    <polygon points="0,0 20,16 40,0 40,42 20,58 0,42" fill="#FF006B"/>
+    <rect x="13" y="22" width="14" height="14" transform="rotate(45 20 29)" fill="#FFE347"/>
+  </g>
+
+  <!-- "H" in hot pink -->
+  <text x="136" y="52" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="900" font-size="52" letter-spacing="-2" fill="#FF006B">H</text>
+
+  <!-- Tagline centered -->
+  <text x="100" y="74" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-weight="600" font-size="8" letter-spacing="1" fill="#D6B9CA">DIFFERENT FANDOMS. SAME HOME.</text>
+</svg>
