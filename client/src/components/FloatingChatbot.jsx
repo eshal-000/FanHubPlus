@@ -252,7 +252,7 @@ export default function FloatingChatbot() {
           <motion.section
             animate={{ opacity: 1, scale: 1, y: 0 }}
             aria-label="Fan Hub Plus chatbot guide"
-            className="fixed inset-x-3 bottom-20 top-3 z-[80] flex flex-col overflow-hidden rounded-2xl border border-primary/40 bg-[#13000e]/95 shadow-[0_0_40px_rgba(255,0,107,0.24),0_24px_70px_rgba(0,0,0,0.48)] backdrop-blur-xl sm:inset-x-auto sm:bottom-24 sm:right-6 sm:top-auto sm:h-[min(680px,calc(100dvh-7.5rem))] sm:w-[min(420px,calc(100vw-2rem))] sm:rounded-3xl"
+            className="fixed inset-x-3 bottom-20 top-3 z-[45] flex flex-col overflow-hidden rounded-2xl border border-primary/40 bg-[#13000e]/95 shadow-[0_0_40px_rgba(255,0,107,0.24),0_24px_70px_rgba(0,0,0,0.48)] backdrop-blur-xl sm:inset-x-auto sm:bottom-24 sm:right-6 sm:top-auto sm:h-[min(680px,calc(100dvh-7.5rem))] sm:w-[min(420px,calc(100vw-2rem))] sm:rounded-3xl"
             exit={{ opacity: 0, scale: 0.96, y: 18 }}
             initial={{ opacity: 0, scale: 0.96, y: 18 }}
             role="dialog"
@@ -405,7 +405,7 @@ export default function FloatingChatbot() {
 
       <motion.button
         aria-label={open && minimized ? 'Restore PulseBot guide' : 'Open PulseBot guide'}
-        className="fixed bottom-4 right-4 z-[80] grid h-12 w-12 place-items-center rounded-full border border-primary/50 bg-primary text-cream shadow-[0_0_30px_rgba(255,0,107,0.38)] transition hover:bg-secondary focus-visible:outline-yellow sm:bottom-5 sm:right-6 sm:h-14 sm:w-14"
+        className="fixed bottom-4 right-4 z-[45] grid h-12 w-12 place-items-center rounded-full border border-primary/50 bg-primary text-cream shadow-[0_0_30px_rgba(255,0,107,0.38)] transition hover:bg-secondary focus-visible:outline-yellow sm:bottom-5 sm:right-6 sm:h-14 sm:w-14"
         onClick={openChat}
         type="button"
         whileHover={{ scale: 1.05 }}

@@ -7,7 +7,7 @@ const categories = ['Anime', 'Gaming', 'Movies', 'TV Shows', 'K-Pop', 'Comics', 
 function Footer() {
   return (
     <footer className="site-footer relative mt-20 px-4 pb-8 text-cream">
-      <div className="absolute left-0 right-0 top-0 h-24 -translate-y-full">
+      <div className="pointer-events-none absolute left-0 right-0 top-0 h-24 -translate-y-full text-[var(--footer-bg)]">
         <svg
           aria-hidden="true"
           className="h-full w-full"
@@ -16,7 +16,7 @@ function Footer() {
         >
           <path
             d="M0 60C240 96 480 20 720 20C960 20 1200 96 1440 60V96H0Z"
-            fill="var(--footer-wave-fill)"
+            fill="currentColor"
           />
           <path
             d="M0 60C240 96 480 20 720 20C960 20 1200 96 1440 60"

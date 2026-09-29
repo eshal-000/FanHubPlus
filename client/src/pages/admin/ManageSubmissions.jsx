@@ -84,7 +84,7 @@ const ManageSubmissions = () => {
                   </div>
                   <h3 className="font-orbitron text-base font-bold text-[var(--cream)] mb-1">{sub.title}</h3>
                   <p className="text-xs text-[var(--muted)] mb-4">Category: {sub.category}</p>
-                  <div className="flex items-center gap-2 pt-4 border-t border-[var(--border)]">
+                  <div className="flex flex-wrap items-center gap-2 pt-4 border-t border-[var(--border)]">
                     <button className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-semibold bg-[var(--nav)]/60 text-[var(--muted)] border border-[var(--border)]">
                       <FiEye size={12} /> View
                     </button>

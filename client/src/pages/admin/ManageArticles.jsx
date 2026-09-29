@@ -66,14 +66,14 @@ const ManageArticles = () => {
             className="w-full rounded-full bg-[var(--nav)] border border-[var(--border)] pl-11 pr-4 py-2.5 text-sm text-[var(--cream)] outline-none focus:border-[var(--primary)]" />
         </div>
 
-        <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)]/40 overflow-hidden">
-          <table className="w-full">
+        <div className="overflow-x-auto rounded-2xl border border-[var(--border)] bg-[var(--surface)]/40">
+          <table className="w-full min-w-[640px]">
             <thead className="bg-[var(--nav)]/60 border-b border-[var(--border)]">
               <tr>
                 <th className="text-left text-xs uppercase tracking-wider text-[var(--muted)] p-4">Title</th>
                 <th className="text-left text-xs uppercase tracking-wider text-[var(--muted)] p-4">Author</th>
                 <th className="text-left text-xs uppercase tracking-wider text-[var(--muted)] p-4">Status</th>
-                <th className="text-right text-xs uppercase tracking-wider text-[var(--muted)] p-4">Actions</th>
+                <th className="min-w-[120px] text-right text-xs uppercase tracking-wider text-[var(--muted)] p-4">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -88,7 +88,7 @@ const ManageArticles = () => {
                   <td className="p-4">
                     <span className={`inline-block px-2.5 py-1 rounded-full text-[10px] font-bold ${a.status === 'published' ? 'bg-green-500/20 text-green-300' : 'bg-yellow-500/20 text-yellow-300'}`}>{a.status}</span>
                   </td>
-                  <td className="p-4 text-right">
+                  <td className="min-w-[120px] whitespace-nowrap p-4 text-right">
                     <button onClick={() => handleEdit(a)} className="p-2 rounded-lg text-[var(--primary)] hover:bg-[var(--primary)]/10 mr-1"><FiEdit size={14} /></button>
                     <button onClick={() => handleDelete(a._id)} className="p-2 rounded-lg text-red-400 hover:bg-red-500/10"><FiTrash2 size={14} /></button>
                   </td>

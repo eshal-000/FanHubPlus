@@ -67,15 +67,15 @@ const ManageCharacters = () => {
             className="w-full rounded-full bg-[var(--nav)] border border-[var(--border)] pl-11 pr-4 py-2.5 text-sm text-[var(--cream)] outline-none focus:border-[var(--primary)]" />
         </div>
 
-        <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)]/40 overflow-hidden">
-          <table className="w-full">
+        <div className="overflow-x-auto rounded-2xl border border-[var(--border)] bg-[var(--surface)]/40">
+          <table className="w-full min-w-[720px]">
             <thead className="bg-[var(--nav)]/60 border-b border-[var(--border)]">
               <tr>
                 <th className="text-left text-xs uppercase tracking-wider text-[var(--muted)] p-4">Name</th>
                 <th className="text-left text-xs uppercase tracking-wider text-[var(--muted)] p-4">Series</th>
                 <th className="text-left text-xs uppercase tracking-wider text-[var(--muted)] p-4">Category</th>
                 <th className="text-left text-xs uppercase tracking-wider text-[var(--muted)] p-4">Status</th>
-                <th className="text-right text-xs uppercase tracking-wider text-[var(--muted)] p-4">Actions</th>
+                <th className="min-w-[120px] text-right text-xs uppercase tracking-wider text-[var(--muted)] p-4">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -100,7 +100,7 @@ const ManageCharacters = () => {
                         {c.status}
                       </span>
                     </td>
-                    <td className="p-4 text-right">
+                    <td className="min-w-[120px] whitespace-nowrap p-4 text-right">
                       <button onClick={() => handleEdit(c)} className="p-2 rounded-lg text-[var(--primary)] hover:bg-[var(--primary)]/10 mr-1"><FiEdit size={14} /></button>
                       <button onClick={() => handleDelete(c._id)} className="p-2 rounded-lg text-red-400 hover:bg-red-500/10"><FiTrash2 size={14} /></button>
                     </td>

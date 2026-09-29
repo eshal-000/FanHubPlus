@@ -423,15 +423,15 @@ const ManageContent = () => {
           />
         </div>
 
-        <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)]/40">
-          <table className="w-full">
+        <div className="overflow-x-auto rounded-2xl border border-[var(--border)] bg-[var(--surface)]/40">
+          <table className="w-full min-w-[820px]">
             <thead className="border-b border-[var(--border)] bg-[var(--nav)]/60">
               <tr>
                 <th className="p-4 text-left text-xs uppercase tracking-wider text-[var(--muted)]">Title</th>
                 <th className="p-4 text-left text-xs uppercase tracking-wider text-[var(--muted)]">Category</th>
                 <th className="p-4 text-left text-xs uppercase tracking-wider text-[var(--muted)]">Type</th>
                 <th className="p-4 text-left text-xs uppercase tracking-wider text-[var(--muted)]">Status</th>
-                <th className="p-4 text-right text-xs uppercase tracking-wider text-[var(--muted)]">Actions</th>
+                <th className="min-w-[190px] p-4 text-right text-xs uppercase tracking-wider text-[var(--muted)]">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -465,7 +465,7 @@ const ManageContent = () => {
                         {item.status}
                       </span>
                     </td>
-                    <td className="p-4 text-right">
+                    <td className="min-w-[190px] whitespace-nowrap p-4 text-right">
                       <button
                         className="mr-1 rounded-lg px-3 py-2 text-xs text-[var(--yellow)] transition hover:bg-[var(--yellow)]/10"
                         onClick={() => updateStatus(item, isPublished ? 'draft' : 'published')}
