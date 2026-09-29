@@ -7,23 +7,26 @@ const categories = ['Anime', 'Gaming', 'Movies', 'TV Shows', 'K-Pop', 'Comics', 
 function Footer() {
   return (
     <footer className="site-footer relative mt-20 px-4 pb-8 text-cream">
-      <div className="pointer-events-none absolute left-0 right-0 top-0 h-24 -translate-y-full text-[var(--footer-bg)]">
+      <div className="pointer-events-none absolute left-0 right-0 top-0 h-24 -translate-y-full">
         <svg
           aria-hidden="true"
           className="h-full w-full"
           preserveAspectRatio="none"
+          style={{ colorScheme: 'dark' }}
           viewBox="0 0 1440 96"
         >
           <path
             d="M0 60C240 96 480 20 720 20C960 20 1200 96 1440 60V96H0Z"
-            fill="currentColor"
+            fill="#180012"
+            style={{ fill: '#180012' }}
           />
           <path
             d="M0 60C240 96 480 20 720 20C960 20 1200 96 1440 60"
             fill="none"
-            stroke="var(--footer-wave-stroke)"
+            stroke="#FF006B"
             strokeOpacity="0.72"
             strokeWidth="2.5"
+            style={{ stroke: '#FF006B' }}
           />
         </svg>
       </div>
