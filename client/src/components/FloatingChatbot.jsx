@@ -252,15 +252,15 @@ export default function FloatingChatbot() {
           <motion.section
             animate={{ opacity: 1, scale: 1, y: 0 }}
             aria-label="Fan Hub Plus chatbot guide"
-            className="fixed inset-x-3 bottom-20 top-3 z-[45] flex flex-col overflow-hidden rounded-2xl border border-primary/40 bg-[#13000e]/95 shadow-[0_0_40px_rgba(255,0,107,0.24),0_24px_70px_rgba(0,0,0,0.48)] backdrop-blur-xl sm:inset-x-auto sm:bottom-24 sm:right-6 sm:top-auto sm:h-[min(680px,calc(100dvh-7.5rem))] sm:w-[min(420px,calc(100vw-2rem))] sm:rounded-3xl"
+            className="fixed inset-x-3 bottom-20 top-[9.5rem] z-[45] flex flex-col overflow-hidden rounded-2xl border border-primary/40 bg-[#13000e]/95 shadow-[0_0_40px_rgba(255,0,107,0.24),0_24px_70px_rgba(0,0,0,0.48)] backdrop-blur-xl sm:inset-x-auto sm:bottom-20 sm:right-5 sm:top-[9.5rem] sm:w-[min(360px,calc(100vw-2rem))] sm:rounded-3xl lg:right-8 lg:top-40 lg:w-[380px]"
             exit={{ opacity: 0, scale: 0.96, y: 18 }}
             initial={{ opacity: 0, scale: 0.96, y: 18 }}
             role="dialog"
           >
-            <div className="relative overflow-hidden border-b border-primary/25 px-3 py-3 sm:px-4 sm:py-4">
+            <div className="relative overflow-hidden border-b border-primary/25 px-3 py-2.5 sm:px-4 sm:py-3">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(255,0,107,0.25),transparent_38%),radial-gradient(circle_at_85%_20%,rgba(139,92,246,0.22),transparent_34%)]" />
               <div className="relative flex items-center gap-3">
-                <div className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-primary text-cream shadow-lg shadow-primary/35 sm:h-11 sm:w-11">
+                <div className="grid h-9 w-9 shrink-0 place-items-center rounded-2xl bg-primary text-cream shadow-lg shadow-primary/35 sm:h-10 sm:w-10">
                   <Bot size={22} />
                 </div>
                 <div className="min-w-0 flex-1">
