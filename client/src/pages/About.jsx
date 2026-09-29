@@ -6,27 +6,32 @@ import { Link } from 'react-router-dom'
 import { CATEGORIES } from '../data/categories'
 
 
+
 const TEAM = [
   {
     name: 'Eshal Noor',
-    title: 'MERN Stack Developer',
-    introduction: 'Turning creative ideas into immersive digital experiences. Passionate about building modern, interactive web applications where clean code meets bold design.',
-    photo: null,
+    title: 'Full Stack Web Developer | MERN Stack',
+    introduction:
+      'Crafting immersive digital experiences by blending creativity, modern design, and full-stack development to bring innovative ideas to life.',
+    photo: '/images/categories/Eshal.jfif',
     linkedin: 'https://www.linkedin.com/in/eshal-noor-dev',
   },
   {
     name: 'Maria',
     title: 'Full Stack Web Developer',
-    introduction: 'Bringing ideas to life through thoughtful development and seamless digital experiences. Driven by creativity, functionality and a passion for building meaningful solutions.',
-    photo: null,
+    introduction:
+      'Bringing ideas to life through thoughtful development and seamless digital experiences. Driven by creativity, functionality and a passion for building meaningful solutions.',
+    photo: '/images/categories/maria.jfif',
   },
   {
     name: 'Wirsha',
     title: 'Web Application Developer',
-    introduction: 'Transforming complex ideas into engaging web experiences. Focused on creating intuitive, functional and impactful digital solutions.',
-    photo: null,
+    introduction:
+      'Transforming complex ideas into engaging web experiences. Focused on creating intuitive, functional and impactful digital solutions.',
+    photo: '/images/categories/wirsha.jfif',
   },
 ]
+
 
 const TECHNOLOGIES = [
   { name: 'React', Icon: SiReact, color: '#61DAFB' },

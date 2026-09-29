@@ -252,15 +252,15 @@ export default function FloatingChatbot() {
           <motion.section
             animate={{ opacity: 1, scale: 1, y: 0 }}
             aria-label="Fan Hub Plus chatbot guide"
-            className="fixed bottom-24 right-4 z-[80] flex h-[min(680px,calc(100vh-7.5rem))] w-[min(420px,calc(100vw-2rem))] flex-col overflow-hidden rounded-3xl border border-primary/40 bg-[#13000e]/95 shadow-[0_0_40px_rgba(255,0,107,0.24),0_24px_70px_rgba(0,0,0,0.48)] backdrop-blur-xl sm:right-6"
+            className="fixed inset-x-3 bottom-20 top-3 z-[80] flex flex-col overflow-hidden rounded-2xl border border-primary/40 bg-[#13000e]/95 shadow-[0_0_40px_rgba(255,0,107,0.24),0_24px_70px_rgba(0,0,0,0.48)] backdrop-blur-xl sm:inset-x-auto sm:bottom-24 sm:right-6 sm:top-auto sm:h-[min(680px,calc(100dvh-7.5rem))] sm:w-[min(420px,calc(100vw-2rem))] sm:rounded-3xl"
             exit={{ opacity: 0, scale: 0.96, y: 18 }}
             initial={{ opacity: 0, scale: 0.96, y: 18 }}
             role="dialog"
           >
-            <div className="relative overflow-hidden border-b border-primary/25 px-4 py-4">
+            <div className="relative overflow-hidden border-b border-primary/25 px-3 py-3 sm:px-4 sm:py-4">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_0%,rgba(255,0,107,0.25),transparent_38%),radial-gradient(circle_at_85%_20%,rgba(139,92,246,0.22),transparent_34%)]" />
               <div className="relative flex items-center gap-3">
-                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary text-cream shadow-lg shadow-primary/35">
+                <div className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl bg-primary text-cream shadow-lg shadow-primary/35 sm:h-11 sm:w-11">
                   <Bot size={22} />
                 </div>
                 <div className="min-w-0 flex-1">
@@ -271,7 +271,7 @@ export default function FloatingChatbot() {
                 </div>
                 <button
                   aria-label="Restart PulseBot guide"
-                  className="grid h-9 w-9 place-items-center rounded-full border border-cream/10 bg-bg/60 text-muted transition hover:border-yellow hover:text-yellow"
+                  className="grid h-8 w-8 place-items-center rounded-full border border-cream/10 bg-bg/60 text-muted transition hover:border-yellow hover:text-yellow sm:h-9 sm:w-9"
                   onClick={goHome}
                   type="button"
                 >
@@ -279,7 +279,7 @@ export default function FloatingChatbot() {
                 </button>
                 <button
                   aria-label="Minimize PulseBot"
-                  className="grid h-9 w-9 place-items-center rounded-full border border-cream/10 bg-bg/60 text-muted transition hover:border-yellow hover:text-yellow"
+                  className="grid h-8 w-8 place-items-center rounded-full border border-cream/10 bg-bg/60 text-muted transition hover:border-yellow hover:text-yellow sm:h-9 sm:w-9"
                   onClick={() => setMinimized(true)}
                   type="button"
                 >
@@ -287,7 +287,7 @@ export default function FloatingChatbot() {
                 </button>
                 <button
                   aria-label="Close PulseBot"
-                  className="grid h-9 w-9 place-items-center rounded-full border border-cream/10 bg-bg/60 text-muted transition hover:border-primary hover:text-primary"
+                  className="grid h-8 w-8 place-items-center rounded-full border border-cream/10 bg-bg/60 text-muted transition hover:border-primary hover:text-primary sm:h-9 sm:w-9"
                   onClick={() => setOpen(false)}
                   type="button"
                 >
@@ -296,7 +296,7 @@ export default function FloatingChatbot() {
               </div>
             </div>
 
-            <div className="flex-1 overflow-y-auto px-4 py-4">
+            <div className="flex-1 overflow-y-auto px-3 py-3 sm:px-4 sm:py-4">
               <article className="flex gap-2">
                 <div className="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-primary/20 text-primary">
                   <Sparkles size={15} />
@@ -394,7 +394,7 @@ export default function FloatingChatbot() {
               )}
             </div>
 
-            <div className="border-t border-primary/20 bg-bg/45 p-4">
+            <div className="border-t border-primary/20 bg-bg/45 p-3 sm:p-4">
               <p className="text-center text-xs leading-5 text-muted">
                 Use the buttons above to navigate. Free-text chat is disabled for this predefined website guide.
               </p>
@@ -405,13 +405,13 @@ export default function FloatingChatbot() {
 
       <motion.button
         aria-label={open && minimized ? 'Restore PulseBot guide' : 'Open PulseBot guide'}
-        className="fixed bottom-5 right-5 z-[80] grid h-14 w-14 place-items-center rounded-full border border-primary/50 bg-primary text-cream shadow-[0_0_30px_rgba(255,0,107,0.38)] transition hover:bg-secondary focus-visible:outline-yellow sm:right-6"
+        className="fixed bottom-4 right-4 z-[80] grid h-12 w-12 place-items-center rounded-full border border-primary/50 bg-primary text-cream shadow-[0_0_30px_rgba(255,0,107,0.38)] transition hover:bg-secondary focus-visible:outline-yellow sm:bottom-5 sm:right-6 sm:h-14 sm:w-14"
         onClick={openChat}
         type="button"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        <span className="absolute -left-2 -top-2 grid h-7 w-7 place-items-center rounded-full bg-yellow text-xs font-black text-bg">
+        <span className="absolute -left-2 -top-2 grid h-6 w-6 place-items-center rounded-full bg-yellow text-[10px] font-black text-bg sm:h-7 sm:w-7 sm:text-xs">
           FAQ
         </span>
         <MessageCircle size={25} />
